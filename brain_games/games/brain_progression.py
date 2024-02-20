@@ -8,7 +8,7 @@ from cli import welcome_user
 name = "Dyadya Bob"
 
 
-def calc_game():
+def progression_game():
     current_number = 0
     length_of_progression = 0
     step_of_progression = 0
@@ -58,7 +58,7 @@ def calc_game():
 def main():
     global name
     name = welcome_user()
-    calc_game()
+    progression_game()
 
 
 if __name__ == "__main__":

@@ -1,17 +1,29 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "5 mini games"
+license = "MIT"
+authors = ["Usman Sakhbeev <usm44@yandex.ru>"]
+maintainers = ["usman Sakhbeev <usm44@yandex.ru>"]
 readme = "README.md"
-packages = [
-  { include = "brain_games" },
-]
+repository = "https://github.com/UsmanSakhbeev/python-project-49"
+keywords = ["python", "command-line", "game"]
+classifiers = [
+	"Intended Audience :: End Users/Desktop",
+	"License :: Freeware",
+	"Natural Language :: English",
+	"Operating System :: POSIX :: Linux",
+	"Programming Language :: Python :: 3.10"]
+packages = [{include = "brain_games"}]
+
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.8.1"
 prompt = "^0.4.1"
 
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.0.0"
 
 [build-system]
 requires = ["poetry-core"]
@@ -19,3 +31,8 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+brain-even = "brain_games.games.brain_even:main"
+brain-calc = "brain_games.games.brain_calc:main"
+brain-gcd = "brain_games.games.brain_gcd:main"
+brain-progression = "brain_games.games.brain_progression:main"
+brain-prime = "brain_games.games.brain_prime:main"

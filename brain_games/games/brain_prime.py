@@ -8,30 +8,25 @@ from cli import welcome_user
 name = "Dyadya Bob"
 
 
-def gcd_game():
-    first_number = 0
-    second_number = 0
-    remainder = 1
+def is_prime_game():
+    number = 0
     corrects_in_row = 0
-    correct_answer = 0
+    correct_answer = "False"
     answer = '0'
-    print("Find the greatest common divisor of given numbers.")
+    print("Answer 'yes' if given number is prime. Otherwise answer 'no'.")
 
     while corrects_in_row < 3:
-        first_number = random.randint(2, 100)
-        second_number = random.randint(2, 100)
-        print(f"Question: {first_number} {second_number}")
+        number = random.randint(2, 200)
+        print(f"Question: {number}")
 
-        if first_number < second_number:
-            first_number, second_number = second_number, first_number
+        divider = 2
+        while number % divider != 0:
+            divider += 1
+        if divider == number:
+            correct_answer = "yes"
+        else:
+            correct_answer = "no"
 
-        while remainder != 0:
-            remainder = first_number % second_number
-            first_number = second_number
-            second_number = remainder
-
-        remainder = 1
-        correct_answer = first_number        
         answer = prompt.string("Your answer: ")
 
         if str(correct_answer) == answer:
@@ -40,7 +35,6 @@ def gcd_game():
         else:
             print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
             break
-
 
     if corrects_in_row == 3:
         print(f"Congratulations, {name}")
@@ -51,7 +45,7 @@ def gcd_game():
 def main():
     global name
     name = welcome_user()
-    gcd_game()
+    is_prime_game()
 
 
 if __name__ == "__main__":
