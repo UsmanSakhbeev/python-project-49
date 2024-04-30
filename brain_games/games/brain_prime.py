@@ -3,7 +3,7 @@ import random
 import sys
 sys.path.append('/home/usman/python-project-49/brain_games')
 
-from cli import welcome_user
+from brain_games.cli import welcome_user
 
 name = "Dyadya Bob"
 
