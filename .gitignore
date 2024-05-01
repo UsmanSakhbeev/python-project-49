@@ -12,5 +12,6 @@ brain_games/scripts/.brain_even.py.swp
 brain_games/scripts/__pycache__
 demo.cast
 ..gitignore.swp
-.swp
+*.swp
 brain_games/__pycache__/cli.cpython-38.pyc
+*.save
