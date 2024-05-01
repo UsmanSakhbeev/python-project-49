@@ -12,7 +12,7 @@ def play_game(game_logic, game_rules):
 
         if player_answer != correct_answer:
             print(f"'{player_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {name}")
+            print(f"Let's try again, {name}!")
             return
         
         print("Congratulations!")
