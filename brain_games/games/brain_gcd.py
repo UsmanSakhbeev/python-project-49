@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import random
 
 game_rule = "Find the greatest common divisor of given numbers."
