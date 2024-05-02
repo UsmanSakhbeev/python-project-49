@@ -32,4 +32,4 @@ lint:
 	poetry run flake8 brain_games
 
 reinstall:
-	python3 -m pip install --user dist/*.whl --force-reinstall
+	poetry python3 -m pip install --user dist/*.whl --force-reinstall
