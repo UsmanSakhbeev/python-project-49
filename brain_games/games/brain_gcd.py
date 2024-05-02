@@ -2,7 +2,9 @@
 
 import random
 
+
 game_rule = "Find the greatest common divisor of given numbers."
+
 
 def gcd_game():
     remainder = 1
@@ -18,9 +20,5 @@ def gcd_game():
         first_number = second_number
         second_number = remainder
 
-    
     correct_answer = first_number
-    return(question, correct_answer)        
-
-
-
+    return (question, correct_answer)

@@ -1,6 +1,8 @@
 import random
 
+
 game_rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
 
 def prime_game():
     number = random.randint(2, 200)
@@ -13,6 +15,4 @@ def prime_game():
         correct_answer = "yes"
     else:
         correct_answer = "no"
-    return(question, correct_answer)
-
-
+    return (question, correct_answer)

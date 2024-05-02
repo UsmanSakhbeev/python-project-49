@@ -5,6 +5,7 @@ import random
 
 game_rule = "What is the result of the expression?"
 
+
 def calc_game():
     first_number = random.randint(2, 100)
     second_number = random.randint(2, 100)
@@ -19,5 +20,3 @@ def calc_game():
         correct_answer = first_number * second_number
         question = f"{first_number} * {second_number}"
     return (question, correct_answer)
-
-

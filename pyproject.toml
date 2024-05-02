@@ -30,7 +30,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.script_brain_games:main"
+brain-games = "brain_games.scripts.brain_game_script:main"
 brain-even = "brain_games.scripts.brain_even_script:main"
 brain-calc = "brain_games.scripts.brain_calc_script:main"
 brain-gcd = "brain_games.scripts.brain_gcd_script:main"
