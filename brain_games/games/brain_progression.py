@@ -23,7 +23,7 @@ def progression_game():
     current_number = random.randint(2, 100)
     length_of_progression = random.randint(5, 10)
     step_of_progression = random.randint(2, 10)
-    missing_element = random.randint(2, length_of_progression)
+    missing_element = random.randint(2, length_of_progression-1)
 
     progression = create_progression(current_number, step_of_progression, length_of_progression)
     question = remove_el_from_progression(progression, missing_element)
