@@ -20,7 +20,7 @@ def progression_game():
     missing_element = random.randint(2, length - 1)
 
     progression = create_progression(current_number, step, length)
-    question = remove_el_from_progression(progression, missing_element)
+    question = format_progression_with_missing(progression, missing_element)
 
     correct_answer = current_number + missing_element * step
 
