@@ -1,4 +1,4 @@
-GENERAL DESCRIPTION:
+# General description:
 
 The project features a greeting and six games based on school course of mathematics.
 
@@ -6,21 +6,21 @@ Each game is played in the command line and requires from the player to correctl
 
 Should the player fail, the game ends and can be replayed by typing the name of the game.
 
-GAMES DESCRIPTION:
+# Games description:
 
-brain-games: greeting of the player
+1. brain-games: greeting of the player
 
-brain-calc: calculate the result of the equation
+2. brain-calc: calculate the result of the equation
 
-brain-even: determine if the number is even
+3. brain-even: determine if the number is even
 
-brain-gcd: calculate the greatest common divisor of two numbers
+4. brain-gcd: calculate the greatest common divisor of two numbers
 
-brain-prime: determine if the number is even
+5. brain-prime: determine if the number is even
 
-brain-progression: calculate the hidden number in the progression
+6. brain-progression: calculate the hidden number in the progression
 
-Installation:
+# Installation:
 
 Clone the code to your directory: git clone https://github.com/UsmanSakhbeev/python-project-49.git 
 
