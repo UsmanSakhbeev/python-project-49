@@ -1,13 +1,16 @@
 import prompt
 
 
-def play_game(game_logic, game_rules):
+round_counts = 3
+
+
+def play_game(get_question_answer, game_rules):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!\n{game_rules}')
 
-    for _ in range(3):
-        question, correct_answer = game_logic()
+    for _ in range(round_counts):
+        question, correct_answer = get_question_answer()
         print(f'Question: {question}')
         player_answer = prompt.string('Your answer: ')
 
