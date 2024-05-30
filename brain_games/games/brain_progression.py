@@ -8,14 +8,9 @@ def create_progression(current_number, step, length):
     return [current_number + i * step for i in range(length)]
 
 
-def remove_el_from_progression(list, missing_element):
-    string = ""
-    for index, value in enumerate(list):
-        if index != missing_element:
-            string += str(value) + " "
-        else:
-            string += ".. "
-    return string
+def format_progression_with_missing(progression, missing_index):
+    progression[missing_index] = ".."
+    return " ".join(map(str, progression))
 
 
 def progression_game():
